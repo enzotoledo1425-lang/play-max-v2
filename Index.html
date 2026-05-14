@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play-Max V2 - Gestión de Ventas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>PANEL DE VENTAS TMA</h1>
+    
+    <div class="form-container">
+        <input type="text" id="cliente" placeholder="Cliente">
+        <input type="number" id="monto" placeholder="Monto ($)">
+        <input type="number" id="porcentaje" placeholder="% Comisión" value="10">
+        <button onclick="registrarVenta()">REGISTRAR VENTA</button>
+    </div>
+
+    <table id="tablaVentas">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Total</th>
+                <th>Comisión</th>
+                <th>Vendedor</th>
+                <th>Dueño</th>
+            </tr>
+        </thead>
+        <tbody id="listaVentas">
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
